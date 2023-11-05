@@ -8,6 +8,7 @@ interface ModalProps {
 }
 function Modal({ children, handleClose, open }: ModalProps) {
   const modalRef = useRef<HTMLDivElement>(null);
+
   const closeModal = (e: React.MouseEvent<HTMLDivElement, MouseEvent>) => {
     handleClose();
   };

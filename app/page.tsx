@@ -1,11 +1,13 @@
 "use client";
 import Modal from "@/components/modal";
 import SignUp from "@/components/signup";
+import { useDisableBodyScroll } from "@/hooks/useDisableBodyScroll";
 import Image from "next/image";
 import { useState } from "react";
 
 export default function Home() {
   const [openModal, setOpenModal] = useState(false);
+  useDisableBodyScroll(openModal);
   return (
     <main className="relative">
       <section className="container max-w-[700px] py-20 px-10 md:px-12 flex flex-col mx-auto">
