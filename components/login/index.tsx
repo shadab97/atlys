@@ -2,7 +2,6 @@ import React from "react";
 import Input from "../ui/input";
 import Button from "../ui/button";
 import Link from "next/link";
-import WithBorder from "../HOC/withBorder";
 
 const Login = () => {
   return (
